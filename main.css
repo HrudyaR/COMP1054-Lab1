@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Your mission - replicate the visual styles in the jpeg provided using CSS advanced selectors and the HTML document provide. You CANNOT use simple type selectors, classes or Ids! */ 
+@import url('https://fonts.googleapis.com/css?family=Cute+Font&display=swap');
+
+body {
+    font-family: 'Cute Font', cursive;
+    font-size: 26px;
+}
+
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ffa604;
+    padding: 20px;
+}
+.wrapper .giphy {
+    width:100%;
+    height:0;
+    padding-bottom:73%;
+    position:relative;
+}
+p.drop-cap:first-letter {
+    font-size: 4.5em;
+}
+.wrapper section p + p {
+    color: purple;
+}
+.wrapper section p ~ p > em {
+    color: #048000;
+    font-size: 36px;
+}
+.wrapper section + section ul li:first-child {
+    text-decoration: underline;
+}
+.wrapper section + section ul li:nth-child(2) > em {
+    color: #048000;
+    font-size: 44px;
+    font-style: italic;
+}
+.wrapper section + section ul li:nth-child(3) {
+    text-decoration: underline;
+}
+.wrapper section + section ul li:last-child {
+    color: #fcfe05;
+    font-size: 44px;
+}
+footer > p {
+    color: #fff;
+}
